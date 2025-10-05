@@ -74,11 +74,6 @@ export const About = () => {
           </div>
         </div>
       </div>
-      <p className='max-w-2xl text-lg mb-6'>
-        I'm a passionate developer with experience in building web applications using modern technologies. I love creating beautiful and functional user experiences.
-       
-      </p>
-      <a href="#contact" className='px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition'>Contact Me</a>
-    </section>
+   </section>
   )
 }
