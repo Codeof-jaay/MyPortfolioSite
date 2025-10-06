@@ -65,16 +65,20 @@ const Contacts = () => {
         });
     }
   return (
-    <section className="relative flex items-center section-spacing c-space">
-        <Particles className="absolute inset-0 -z-50" quantity={100} ease={80} color={"#ffffff"} refresh />
+    <section id="contacts" className="relative flex items-center section-spacing c-space">
+        {/* Debug: Show particles container */}
+        ß<Particles className="absolute inset-0 -z-50" quantity={100} ease={80} color={"#ffffff"} refresh />
+        <div className="absolute top-4 left-4 text-white bg-blue-500 p-2 rounded text-xs">
+          
+        </div>
         
             {showAlert && <Alert type={alertType} text={alertMessage}/> }
 
-            <div className="flex flex-col items-center justify-center max-w-md mx-auto border border-white/10 rounded-2xl bg-primary ">
+            <div className="flex flex-col px-8 py-8 items-center justify-center max-w-md mx-auto border border-white/10 rounded-2xl bg-primary ">
                 <div className="flex flex-col items-start gap-5 w-full mb-10">
 
-                    <h2 className="text-heavy">
-                        let's connect
+                    <h2 className="font-bold text-2xl">
+                        Let's Connect
 
                     </h2>
                     <p className="font-normal">
@@ -105,7 +109,7 @@ const Contacts = () => {
                         <textarea type="text" rows="4" id="message" name="message" className="field-input field-input-focus" placeholder="Hello Jude" required value={formData.message} onChange={handleChange}/>
                         
                     </div>
-                    <button type="submit" className="w-full px-1 py-3 text-lg font-medium text-center cursor-pointer text-black transition-all bg-radial from-lavender to-royal hover-animation rounded-md hover:bg-transparent">
+                    <button type="submit" className="w-full px-1 py-3 text-lg font-medium text-center cursor-pointer text-black transition-all bg-radial from-lavender to-royal hover-animation rounded-md hover:bg-transparent" disabled={isLoading}>
                        {!isLoading? "Send Message": "Sending..."}
                     </button>
                 </form>

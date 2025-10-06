@@ -1,20 +1,36 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
+import { Link } from "react-scroll";
 
-function Navigation() {
+function Navigation({ onNavigate }) {
+  const commonLinkProps = {
+    smooth: true,
+    duration: 600,
+    spy: true,
+    offset: -80, // account for fixed navbar height
+  };
+
   return (
     <ul className="nav-ul">
       <li className="nav-li">
-        <a className="nav-link font-bold text-xl">Home</a>
+        <Link {...commonLinkProps} to="hero" className="nav-link font-bold text-xl" onClick={onNavigate}>
+          Home
+        </Link>
       </li>
       <li className="nav-li">
-        <a className="nav-link font-bold text-xl">About</a>
+        <Link {...commonLinkProps} to="about" className="nav-link font-bold text-xl" onClick={onNavigate}>
+          About
+        </Link>
       </li>
       <li className="nav-li">
-        <a className="nav-link font-bold text-xl">Projects</a>
+        <Link {...commonLinkProps} to="projects" className="nav-link font-bold text-xl" onClick={onNavigate}>
+          Projects
+        </Link>
       </li>
       <li className="nav-li">
-        <a className="nav-link font-bold text-xl">Contact</a>
+        <Link {...commonLinkProps} to="contacts" className="nav-link font-bold text-xl" onClick={onNavigate}>
+          Contact
+        </Link>
       </li>
     </ul>
   );
@@ -41,14 +57,14 @@ const NavBar = () => {
             />
           </button>
           <nav className="hidden sm:flex">
-            <Navigation />
+            <Navigation onNavigate={undefined} />
           </nav>
         </div>
 
         {isOpen && (
           <motion.div className="block overflow-hidden text-center sm:hidden" initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 3 }} style={{ maxHeight:"100vh" }}>
             <nav className="pb-5">
-              <Navigation />
+              <Navigation onNavigate={() => setIsOpen(false)} />
             </nav>
           </motion.div>
         )}
