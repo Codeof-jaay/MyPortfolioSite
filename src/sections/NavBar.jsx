@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
+
 function Navigation() {
   return (
     <ul className="nav-ul">
       <li className="nav-li">
-        <a className="nav-link">Home</a>
+        <a className="nav-link font-bold text-xl">Home</a>
       </li>
       <li className="nav-li">
-        <a className="nav-link">About</a>
+        <a className="nav-link font-bold text-xl">About</a>
       </li>
       <li className="nav-li">
-        <a className="nav-link">Work</a>
+        <a className="nav-link font-bold text-xl">Projects</a>
       </li>
       <li className="nav-li">
-        <a className="nav-link">Contact</a>
+        <a className="nav-link font-bold text-xl">Contact</a>
       </li>
     </ul>
   );
@@ -45,7 +46,7 @@ const NavBar = () => {
         </div>
 
         {isOpen && (
-          <motion.div className="block overflow-hidden text-center sm:hidden" initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} style={{ maxHeight:"100vh" }}>
+          <motion.div className="block overflow-hidden text-center sm:hidden" initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 3 }} style={{ maxHeight:"100vh" }}>
             <nav className="pb-5">
               <Navigation />
             </nav>

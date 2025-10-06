@@ -29,7 +29,7 @@ export const About = () => {
          {/* Grid 2 */}
         <div ref={grid2Container} className="flex items-end grid-default-color grid-2">
             <div className="flex items-center justify-center w-full h-full">
-                <p className="flex items-end text-5xl text-gray-500"> 
+                <p style={{ userSelect: 'none' }} className="flex items-end text-5xl text-gray-500 user-select-none"> 
                     Code is craft
                 </p>
                 <Cards containerRef={grid2Container} style={{rotate:"66deg",  top:"30%", left:"27%"}} text="GRASP"/>

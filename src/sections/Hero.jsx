@@ -15,7 +15,7 @@ const Hero = () => {
         <Parallax />
         <figure className="absolute inset-0" style={{ height: '100vh', width: '100vw' }}>
         <Canvas style={{
-          filter: "grayscale(1) brightness(0.7) sepia(1) hue-rotate(270deg)",
+          filter: "grayscale(1) brightness(0.6) sepia(1) hue-rotate(270deg)",
           width: "100vw",
           height: "100vh"
         }}
