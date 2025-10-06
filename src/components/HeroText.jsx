@@ -23,14 +23,12 @@ const HeroText = () => {
             <motion.p initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} style={{ maxHeight:"100vh" }} className="text-4xl font-medium">
                 Hi, I'm Jude!
             </motion.p>
-            <div>
-                <p className="text-5xl font-black text-neutral-300">
-                    Building 
-                    <motion.div initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} style={{ maxHeight:"100vh" }}>
-                        <FlipWords className="font-black text-7xl text-white" words={words}/>
-                    </motion.div>
-                    <motion.p initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} style={{ maxHeight:"100vh" }} className="text-4xl font-black text-neutral-300"> web Applications</motion.p>
-                </p>
+            <div className="text-5xl font-black text-neutral-300">
+                <span>Building </span>
+                <motion.div initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} style={{ maxHeight:"100vh" }}>
+                    <FlipWords className="font-black text-7xl text-white" words={words}/>
+                </motion.div>
+                <motion.span initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} style={{ maxHeight:"100vh" }} className="text-4xl font-black text-neutral-300"> web Applications</motion.span>
             </div>
         </div>
     </div>
