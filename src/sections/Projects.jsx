@@ -1,5 +1,5 @@
 import { myProjects } from "../constants"
-import Project from "../components/project"
+import Project from "../components/Project"
 import { motion, useMotionValue, useSpring } from "motion/react"
 import { useState } from "react"
 
