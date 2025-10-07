@@ -67,14 +67,11 @@ const Contacts = () => {
   return (
     <section id="contacts" className="relative flex items-center section-spacing c-space">
         {/* Debug: Show particles container */}
-        <Particles className="absolute inset-0 -z-50" quantity={100} ease={80} color={"#ffffff"} refresh />
-        <div className="absolute top-4 left-4 text-white bg-blue-500 p-2 rounded text-xs">
-            Particles should be here
-        </div>
+        <Particles className="absolute inset-0 -z-0" quantity={100} ease={80} color={"#ffffff"} refresh />
         
             {showAlert && <Alert type={alertType} text={alertMessage}/> }
 
-            <div className="flex flex-col px-8 py-8 items-center justify-center max-w-md mx-auto border border-white/10 rounded-2xl bg-primary ">
+            <div className="flex flex-col px-8 py-8 items-center justify-center max-w-md mx-auto border border-white/10 rounded-2xl bg-primary z-10">
                 <div className="flex flex-col items-start gap-5 w-full mb-10">
 
                     <h2 className="font-bold text-2xl">

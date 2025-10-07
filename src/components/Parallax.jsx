@@ -32,28 +32,22 @@ const Parallax = () => {
             <div className='absolute w-full inset-0 h-screen -z-50' style={{
                 backgroundImage: "url('assets/sky.jpg')",
                 backgroundSize: 'cover',
-                backgroundPosition: 'bottom',
+                backgroundPosition: 'center bottom',
                 filter: 'grayscale(1)',
             }} />
-            {/* Debug: Show if ready */}
-            {!isReady && (
-                <div className="absolute top-4 left-4 text-white bg-red-500 p-2 rounded">
-                    Parallax not ready
-                </div>
-            )}
+            
+         
              {/* mount later 3*/}
             {isReady && (
                 <motion.div className='absolute inset-0 -z-40' style={{
                     backgroundImage: "url('assets/mountain-3.png')",
                     backgroundSize: 'cover',
-                    backgroundPosition: 'bottom',
+                    backgroundPosition: 'center bottom',
+                    backgroundRepeat: 'no-repeat',
                     filter: 'grayscale(.75)',
                     y: mount3Y,
                 }}>
-                    {/* Debug: Show motion div is rendering */}
-                    <div className="absolute top-4 right-4 text-white bg-green-500 p-2 rounded text-xs">
-                        Mountain 3
-                    </div>
+                    
                 </motion.div>
             )}
              {/* mount layer 2*/}
@@ -61,7 +55,8 @@ const Parallax = () => {
                 <motion.div className='absolute inset-0 -z-30' style={{
                     backgroundImage: "url('assets/planets.png')",
                     backgroundSize: 'cover',
-                    backgroundPosition: 'bottom',
+                    backgroundPosition: 'center bottom',
+                    backgroundRepeat: 'no-repeat',
                     filter: 'grayscale(.8)',
                     x: planetsX,
                 }} />
@@ -69,9 +64,9 @@ const Parallax = () => {
              {/* mount layer 1*/}
             {isReady && (
                 <motion.div className='absolute inset-0 -z-20' style={{
-                    backgroundImage: "url('/assets/mountain-2.png')",
+                    backgroundImage: "url('assets/mountain-2.png')",
                     backgroundSize: 'cover',
-                    backgroundPosition: 'bottom',
+                    backgroundPosition: 'center bottom',
                     backgroundRepeat: 'no-repeat',
                     filter: 'grayscale(.5)',
                     y: mount2Y,
@@ -80,9 +75,9 @@ const Parallax = () => {
              {/* SKY*/}
             {isReady && (
                 <motion.div className='absolute inset-0 -z-10' style={{
-                    backgroundImage: "url('/assets/mountain-1.png')",
+                    backgroundImage: "url('assets/mountain-1.png')",
                     backgroundSize: 'cover',
-                    backgroundPosition: 'bottom',
+                    backgroundPosition: 'center bottom',
                     backgroundRepeat: 'no-repeat',
                     filter: 'grayscale(.5)',
                     y: mount1Y,
