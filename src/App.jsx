@@ -17,7 +17,7 @@ const App = () => {
       setTimeout(() => {
         window.dispatchEvent(new Event('resize'));
       }, 100);
-    }, 8000); // 8s loader
+    }, 15000); // 15s loader
     return () => clearTimeout(timer);
   }, []);
 
