@@ -151,3 +151,13 @@ body {
     }
   }
 }
+@keyframes liquid {
+  0% { transform: translateX(200%) translateY(-10%) scale(1); }
+  50% { transform: translateX(200%) translateY(10%) scale(1.05); }
+  100% { transform: translateX(200%) translateY(-10%) scale(1); }
+}
+
+.animate-liquid {
+  animation: liquid 8s ease-in-out infinite;
+  transform-origin: center;
+}

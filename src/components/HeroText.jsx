@@ -1,20 +1,27 @@
 import { FlipWords } from "./FlipWords"
 import { motion } from "framer-motion";
-const words = ["Smart", "Productive", "Ethical"];
+const words = ["Building the future",
+"Building AI that learns",
+"Building systems that scale",
+"Building designs that inspire",
+"Building Code that performs",
+"Building tools that empower"];
+
+
 const HeroText = () => {
   return (
-    <div className="z-10 mt-20 text-center md:mt-40 md:text-left bg-clip-text"> 
+    <div className="inset-y-35 z-10 mt-20 text-center md:mt-40 md:text-center absolute inset-0 bg-clip-text"> 
        {/*Desktop View*/}
-       <div className="hidden md:flex flex-col c-space"> 
+       <div className="hidden md:flex flex-col c-space position-relative space-y-6 mt-10"> 
             <motion.h1 initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} style={{ maxHeight:"100vh" }} className="text-4xl font-medium text-white">Hi, I'm Jude!</motion.h1>
-            <div className="flex flex-col items-start">
-                <motion.p initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 4 }} style={{ maxHeight:"100vh" }} className="text-5xl font-medium text-neutral-300">  A dedicated Dev</motion.p>
+            <div className="flex flex-col">
+                <motion.p initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 4 }} style={{ maxHeight:"100vh" }} className="text-5xl font-medium text-white text-center"> I'm dedicated to</motion.p>
             
-            <div initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 5 }} style={{ maxHeight:"100vh" }}>
-               <FlipWords className="font-black text-8xl text-white"words={words}/> 
-            </div>
+                <div initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 5 }} style={{ maxHeight:"100vh" }}>
+                <FlipWords className="font-black text-6xl text-white"words={words}/> 
+                </div>
 
-            <motion.p initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 5 }} style={{ maxHeight:"100vh" }} className="text-4xl font-medium text-neutral-300"> Web solutions </motion.p>
+                <motion.p initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 5 }} style={{ maxHeight:"100vh" }} className="text-4xl font-medium text-neutral-300"> one line of code at a time.</motion.p>
             </div>
 
        </div>
