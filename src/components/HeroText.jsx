@@ -10,9 +10,9 @@ const words = ["Building the future",
 
 const HeroText = () => {
   return (
-    <div className="inset-y-35 z-10 mt-20 text-center md:mt-40 md:text-center absolute inset-0 bg-clip-text"> 
+    <div className="inset-y-30 z-10 mt-20 text-center md:mt-40 md:text-center absolute inset-0 bg-clip-text"> 
        {/*Desktop View*/}
-       <div className="hidden md:flex flex-col c-space position-relative space-y-6 mt-10"> 
+       <div className="hidden md:flex flex-col c-space position-relative space-y-7 mt-10"> 
             <motion.h1 initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} style={{ maxHeight:"100vh" }} className="text-4xl font-medium text-white">Hi, I'm Jude!</motion.h1>
             <div className="flex flex-col">
                 <motion.p initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 4 }} style={{ maxHeight:"100vh" }} className="text-5xl font-medium text-white text-center"> Dedicated to</motion.p>
