@@ -5,7 +5,8 @@ const words = ["Building the future",
 "Building systems that scale",
 "Building designs that inspire",
 "Building Code that performs",
-"Building tools that empower"];
+"Building tools that empower"
+,"<helping out />"];
 
 const HeroText = () => {
   const variants = {
@@ -55,7 +56,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-            Get to know me
+            one line of code at a time
           </motion.p>
         </div>
       </div>
@@ -98,7 +99,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.8 }}
           >
-            Web Applications
+            one line of code at a time
           </motion.p>
         </div>
       </div>

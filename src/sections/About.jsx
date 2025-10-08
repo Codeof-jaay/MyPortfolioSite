@@ -1,8 +1,8 @@
 import { useRef } from "react"
-import Cards from "../components/Cards"
 import { Globe } from "../components/Globe";
 import CompyEmailButton from "../components/CompyEmailButton";
 import {Framework} from "../components/Framework";
+import Cubes from "../components/Cubes";
 
 export const About = () => {
     const grid2Container = useRef();
@@ -26,35 +26,45 @@ export const About = () => {
 
 
         </div>
-         {/* Grid 2 */}
-        <div ref={grid2Container} className="flex items-end grid-default-color grid-2">
-            <div className="flex items-center justify-center w-full h-full">
-                <p style={{ userSelect: 'none' }} className="flex items-end text-5xl text-gray-500 user-select-none"> 
-                    Code is craft
-                </p>
-                <Cards containerRef={grid2Container} style={{rotate:"66deg",  top:"30%", left:"27%"}} text="GRASP"/>
-                <Cards containerRef={grid2Container} style={{rotate:"-30deg",  top:"60%", left:"45%"}} text="SOLID"/>
-                <Cards containerRef={grid2Container} style={{rotate:"90deg",  top:"30%", left:"70%"}} text="DESIGN PRINCIPLES"/>
-                <Cards containerRef={grid2Container} style={{rotate:"45deg",  top:"55%", left:"0%"}} text="DESIGN PATTERNS"/>
-                <Cards containerRef={grid2Container} style={{rotate:"20deg",  top:"10%", left:"38%"}} text="SRP"/>
-
-                <Cards containerRef={grid2Container} style={{ rotate: "30deg", top: "70%", left: "70%" }} image="assets/logos/csharp-pink.png"/>
-                <Cards containerRef={grid2Container} style={{ rotate: "-20deg", top: "70%", left: "25%" }} image="assets/logos/blazor-pink.png" />
-                <Cards containerRef={grid2Container} style={{ rotate: "10deg", top: "5%", left: "10%" }} image="assets/logos/dotnet-pink.png" />
-               </div>
-        </div>
          {/* Grid 3 */}
-        <div className="flex items-start grid-black-color grid-3">
+        <div className="flex items-start grid-black-color grid-2">
             <div className="z-10 w-[50%]">
                 <p className="headtext">Time Zone</p>
                 <p className="subtext">
-                I'm based in Mars, and open to remote work worldwide
+                I'm based in Nigeria, and open to remote work worldwide
                 </p>
             </div>
             <figure className="absolute left-[30%] top-[10%]"> 
                 <Globe />
             </figure>
 
+        </div>
+         {/* Grid 3 */}
+        <div ref={grid2Container} className="flex items-end grid-default-color grid-2">
+            <div className="relative flex flex-row space-x-4 items-center justify-center w-full h-full">
+                              <Cubes 
+                  gridSize={6}
+                  maxAngle={15}
+                  radius={1}
+                  borderStyle="2px dashed #5227FF"
+                  faceColor="#000000"
+                  rippleColor="#ffffff"
+                  rippleSpeed={1.5}
+                  autoAnimate={true}
+                  rippleOnClick={true}
+                />
+              <Cubes 
+                  gridSize={6}
+                  maxAngle={15}
+                  radius={1}
+                  borderStyle="2px dashed #5227FF"
+                  faceColor="#000000"
+                  rippleColor="#ffffff"
+                  rippleSpeed={1.5}
+                  autoAnimate={true}
+                  rippleOnClick={true}
+                />
+              </div>
         </div>
          {/* Grid 4 */}
         <div className="flex grid-special-color grid-4">

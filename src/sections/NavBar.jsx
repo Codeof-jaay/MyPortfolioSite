@@ -50,7 +50,7 @@ const NavBar = () => {
   return (
              <div
       onMouseMove={handleMouseMove}
-      className="fixed inset-x-4 top-12 z-20 w-[40%] space-x-4 py-2 mx-auto rounded-4xl overflow-hidden hover:py-3 hover:scale-x-110 duration-500"
+      className="fixed inset-x-4 top-12 z-20 w-[40%] space-x-3 py-2 mx-auto rounded-4xl overflow-hidden hover:py-3 hover:scale-x-110 duration-500"
       style={{
         transition: "all 0.6s ease",
       }}

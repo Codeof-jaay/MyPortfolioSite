@@ -3,8 +3,7 @@ import { Orbit } from "./Orbit"
 
 export function Framework() {
   const skills = [
-    "auth0",
-    "blazor",
+    "openai",
     "cplusplus",
     "csharp",
     "css3",
@@ -13,12 +12,13 @@ export function Framework() {
     "git",
     "html5",
     "javascript",
+    "java",
     "microsoft",
+    "python",
     "react",
     "sqlite",
-    "tailwindcss",
+    "tailwindcss",  
     "vitejs",
-    "wordpress",
   ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">
