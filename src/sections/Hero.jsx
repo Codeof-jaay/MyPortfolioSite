@@ -11,7 +11,7 @@ const Hero = () => {
         <HeroText />
         
         </div>
-        <Iridescence color={[.5, .4, .9]} mouseReact={false} amplitude={0.1} speed={1.0} />
+        <Iridescence color={[.55, .4, .9]} mouseReact={false} amplitude={0.1} speed={1.0} />
         
       
     </section>

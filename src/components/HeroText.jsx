@@ -15,7 +15,7 @@ const HeroText = () => {
        <div className="hidden md:flex flex-col c-space position-relative space-y-6 mt-10"> 
             <motion.h1 initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} style={{ maxHeight:"100vh" }} className="text-4xl font-medium text-white">Hi, I'm Jude!</motion.h1>
             <div className="flex flex-col">
-                <motion.p initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 4 }} style={{ maxHeight:"100vh" }} className="text-5xl font-medium text-white text-center"> I'm dedicated to</motion.p>
+                <motion.p initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 4 }} style={{ maxHeight:"100vh" }} className="text-5xl font-medium text-white text-center"> Dedicated to</motion.p>
             
                 <div initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 5 }} style={{ maxHeight:"100vh" }}>
                 <FlipWords className="font-black text-6xl text-white"words={words}/> 
