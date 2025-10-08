@@ -236,7 +236,7 @@ export const mySocials = [
   },
   {
     name: "GitHub",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://github.com/Codeof-jaay",
     icon: "/assets/socials/github.svg",
   },
 ];

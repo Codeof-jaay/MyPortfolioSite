@@ -14,12 +14,12 @@ export const PageLoad = () => {
         strokeWidth="1"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-20 w-20 stroke-neutral-500 [--fill-final:var(--color-yellow-300)] [--fill-initial:var(--color-neutral-50)] dark:stroke-neutral-100 dark:[--fill-final:var(--color-yellow-500)] dark:[--fill-initial:var(--color-neutral-800)]"
+        className="h-20 w-20 stroke-neutral-500 [--fill-final:var(--color-yellow-800)] [--fill-initial:var(--color-neutral-50)] dark:stroke-neutral-100 dark:[--fill-final:var(--color-yellow-500)] dark:[--fill-initial:var(--color-neutral-800)]"
       >
         <motion.path stroke="none" d="M0 0h24v24H0z" fill="none" />
         <motion.path
           initial={{ pathLength: 0, fill: "var(--fill-initial)" }}
-          animate={{ pathLength: 1, fill: "var(--fill-final)" }}
+          animate={{ pathLength: 1, fill: "var(--fill-final)" , scale: [1, 1.2]}}
           transition={{
             duration: 2,
             ease: "easeInOut",

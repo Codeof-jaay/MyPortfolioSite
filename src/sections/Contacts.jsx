@@ -67,11 +67,11 @@ const Contacts = () => {
   return (
     <section id="contacts" className="relative flex items-center section-spacing c-space">
         {/* Debug: Show particles container */}
-        <Particles className="absolute inset-0 -z-0" quantity={100} ease={80} color={"#ffffff"} refresh />
+        <Particles className="absolute inset-0 -z-0" quantity={200} ease={80} color={"#ffffff"} refresh />
         
             {showAlert && <Alert type={alertType} text={alertMessage}/> }
 
-            <div className="flex flex-col px-8 py-8 items-center justify-center max-w-md mx-auto border border-white/10 rounded-2xl bg-primary z-10">
+            <div className="flex flex-col px-8 py-8 items-center justify-center max-w-md mx-auto border-2 border-white/15 rounded-2xl bg-white/5 backdrop-blur-[px] z-10 shadow-[inset_0_0_10px_rgba(255,255,255,0.2),0_8px_32px_rgba(0,0,0,0.37)]">
                 <div className="flex flex-col items-start gap-5 w-full mb-10">
 
                     <h2 className="font-bold text-2xl">
@@ -106,7 +106,7 @@ const Contacts = () => {
                         <textarea type="text" rows="4" id="message" name="message" className="field-input field-input-focus" placeholder="Hello Jude" required value={formData.message} onChange={handleChange}/>
                         
                     </div>
-                    <button type="submit" className="w-full px-1 py-3 text-lg font-medium text-center cursor-pointer text-black transition-all bg-radial from-lavender to-royal hover-animation rounded-md hover:bg-transparent" disabled={isLoading}>
+                    <button type="submit" className="w-full px-1 py-6 text-lg font-medium text-center cursor-pointer bg-white/10 hover:bg-lavender/5 text-white/60 hover:text-white/80 transition-all border-2 hover:border-0 border-white/20 backdrop-blur-xl hover:scale-x-105  hover:border-lavender/50 rounded-2xl shadow-[inset_0_0_10px_rgba(255,255,255,0.2),0_8px_32px_rgba(0,0,0,0.37)]" disabled={isLoading}>
                        {!isLoading? "Send Message": "Sending..."}
                     </button>
                 </form>

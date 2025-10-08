@@ -7,7 +7,7 @@ function Navigation({ onNavigate }) {
     smooth: true,
     duration: 600,
     spy: true,
-    offset: -80, // account for fixed navbar height
+    offset: -75, // account for fixed navbar height
   };
 
   return (
@@ -50,7 +50,7 @@ const NavBar = () => {
   return (
              <div
       onMouseMove={handleMouseMove}
-      className="fixed inset-x-4 top-8 z-20 w-[60%] mx-auto rounded-4xl overflow-hidden hover:scale-x-110 duration-500"
+      className="fixed inset-x-4 top-12 z-20 w-[40%] space-x-4 py-2 mx-auto rounded-4xl overflow-hidden hover:py-3 hover:scale-x-110 duration-500"
       style={{
         transition: "all 0.6s ease",
       }}
@@ -60,7 +60,7 @@ const NavBar = () => {
 
       {/* Animated moving highlight */}
       <div
-        className="absolute inset-0 opacity-50 pointer-events-none transition-transform duration-500 ease-out"
+        className="absolute inset-0 opacity-50 pointer-events-none transition-transform duration-500 ease-out rounded-4xl"
         style={{
           background: `radial-gradient(circle at ${position.x}% ${position.y}%, rgba(255,255,255,0.4), transparent 60%)`,
         }}
@@ -69,19 +69,18 @@ const NavBar = () => {
       {/* Slow liquid shimmer (ambient) */}
       <div className="absolute inset-0 animate-liquid opacity-25 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.6)_0%,transparent_60%)]" />
    
-      <div className="mx-auto c-space max-w-7xl">
-        <div className="flex items-center justify-between py-3 sm:py-2">
-          <a href="/" className="text-xl font-bold transition-colors text-white hover:scale-105">
-           
-          </a>
+      <div id="MyDiv" className="mx-auto c-space max-w-7xl ">
+        <div className="flex items-center justify-center px-2 py-3 sm:py-2">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex cursor-pointer text-white hover:text-white focus:outline-none sm:hidden"
+            className="flex cursor-pointer text-white hover:text-white focus:outline-none sm:hidden "
+             style={{ marginRight: '11px'}}
           >
             <img
               src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
-              className="w-6 h-6 z-50"
+              className="w-6 h-6 z-50 -inset-1"
               alt=""
+             
             />
           </button>
           <nav className="hidden sm:flex">
@@ -90,7 +89,7 @@ const NavBar = () => {
         </div>
 
         {isOpen && (
-          <motion.div className="block overflow-hidden text-center sm:hidden" initial={{ opacity: 0, x:-10,  }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 3 }} style={{ maxHeight:"100vh" }}>
+          <motion.div className="block justify-center overflow-hidden text-center sm:hidden" initial={{ opacity: 0, x:-20, height: "1rem"}} animate={{ opacity: 1, x: -8, height: "15rem" }} transition={{ duration: .8 }} style={{ maxHeight:"100vh" }}>
             <nav className="pb-5">
               <Navigation onNavigate={() => setIsOpen(false)} />
             </nav>
