@@ -21,7 +21,7 @@ const Hero = () => {
       <motion.div style={{y:yPlasma}} className="absolute w-full h-full flex items-center justify-center">
          
         <Dither
-          waveColor={[0.4, 0, 0.8]}
+          waveColor={[0.4, 0, 0.8 ]}
           disableAnimation={false}
           enableMouseInteraction={true}
           mouseRadius={0.3}
