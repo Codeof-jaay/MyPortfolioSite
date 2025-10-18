@@ -244,7 +244,7 @@ export const mySocials = [
 export const experiences = [
   {
     title: "Administrative Assistant",
-    job: "Covenant University Center for Systems and Information",
+    job: "Covenant University Center for Systems and Information Services",
     date: "2024 – 2025",
     contents: [
      "Supported the university’s IT systems, providing technical support to staff and students.",
@@ -260,15 +260,6 @@ export const experiences = [
      "Implemented and maintained the hospital’s information system (HIS) with SQL-based databases and role-based access control",
     "Managed daily IT operations, network administration, and hardware/software troubleshooting.",
     "Reduced system downtime by 35% through proactive maintenance and infrastructure optimization."
-    ],
-  },
-  {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "2025-Present",
-    contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
     ],
   },
 ];
