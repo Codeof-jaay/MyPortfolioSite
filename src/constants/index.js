@@ -243,27 +243,23 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "Administrative Assistant",
+    job: "Covenant University Center for Systems and Information",
+    date: "2024 – 2025",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+     "Supported the university’s IT systems, providing technical support to staff and students.",
+     "Documented workflows and standardized support processes, improving help-desk efficiency by 25%",
+     "Collaborated with senior IT staff on maintaining network reliability and digital resource accessibility."
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
-    date: "2023-2024",
+    title: "IT & Maintenance Manager",
+    job: "Immanuel Clinic, Port Harcourt",
+    date: "2023 - Present",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+     "Implemented and maintained the hospital’s information system (HIS) with SQL-based databases and role-based access control",
+    "Managed daily IT operations, network administration, and hardware/software troubleshooting.",
+    "Reduced system downtime by 35% through proactive maintenance and infrastructure optimization."
     ],
   },
   {
