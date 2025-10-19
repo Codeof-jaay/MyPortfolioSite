@@ -18,7 +18,7 @@ export const About = () => {
             <div className="z-10">
                 <p className="headtext">Hi, I'm Jude Anyanwu</p>
                 <p className="subtext">
-                Over the last 4 years, I developed my frontend and backend dev
+                Over the last 4 years, I developed my AI and Ml
                 skills to deliver dynamic and software and web applications.
                 </p>
             </div>
