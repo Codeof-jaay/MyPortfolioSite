@@ -1,33 +1,33 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Job Recruitment Platform and Talent Seeking Platform",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "A platform that connects job seekers with potential employers, streamlining the recruitment process.",
     subDescription: [
       "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
       "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
       "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
       "Added payment systems, localization, and product filtering for functionality improvements.",
     ],
-    href: "",
+    href: "https://project-atlas-v1.vercel.app/",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/dashhr.png",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "python",
+        path: "/assets/logos/python.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        name: "react",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
+        name: "vite",
+        path: "/assets/logos/vite.svg",
       },
       {
         id: 4,
@@ -47,15 +47,10 @@ export const myProjects = [
       "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
       "Connected to a secure SQLite database for user data storage.",
     ],
-    href: "",
+    href: "https://project-atlas-v1.vercel.app/",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/auth.png",
     tags: [
-      {
-        id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
-      },
       {
         id: 2,
         name: "React",
@@ -71,148 +66,148 @@ export const myProjects = [
         name: "TailwindCSS",
         path: "/assets/logos/tailwindcss.svg",
       },
+      {
+        id: 5,
+        name: "python",
+        path: "/assets/logos/python.svg",
+      }
     ],
   },
   {
-    id: 3,
-    title: "Blazor Web App",
+  id: 3,
+  title: "MOKEE App Co-development",
+  description:
+    "Contributed to the development of the MOKEE application by improving backend workflows, debugging system issues, and supporting feature implementation for a scalable user experience.",
+  subDescription: [
+    "Worked on backend logic and API integrations to improve system performance and reliability.",
+    "Assisted in debugging and resolving server-side issues affecting application stability.",
+    "Collaborated with the development team on feature enhancements and workflow optimization.",
+    "Supported deployment processes and testing to ensure smooth production releases.",
+  ],
+  href: "",
+  logo: "",
+  image: "/assets/projects/mokee-app.png",
+  tags: [
+    {
+      id: 1,
+      name: "Python",
+      path: "/assets/logos/python.svg",
+    },
+    {
+      id: 2,
+      name: "Flask",
+      path: "/assets/logos/flask.svg",
+    },
+    {
+      id: 3,
+      name: "Git",
+      path: "/assets/logos/git.svg",
+    },
+  ],
+},
+{
+  id: 4,
+  title: "TYPING INVADERS",
+  description:
+    "A competitive browser-based typing game where enemies descend with words you must type to destroy — featuring user accounts, global leaderboards, and real-time WPM tracking.",
+  subDescription: [
+    "Built a React + Vite frontend with a DOM-based game loop, wave progression system, and combo multiplier scoring.",
+    "Developed a FastAPI backend with JWT authentication using access tokens and httpOnly refresh token cookies.",
+    "Implemented a global leaderboard and personal score history backed by SQLite via SQLAlchemy ORM.",
+    "Designed a three-tier word difficulty system with 600+ words that scales enemy speed and spawn rate across waves.",
+  ],
+  href: "",
+  logo: "",
+  image: "/assets/projects/game.png",
+  tags: [
+    {
+      id: 1,
+      name: "React",
+      path: "/assets/logos/react.svg",
+    },
+    {
+      id: 2,
+      name: "Vite",
+      path: "/assets/logos/vite.svg",
+    },
+    {
+      id: 3,
+      name: "Github",
+      path: "/assets/logos/github.svg",
+    },
+    {
+      id: 4,
+      name: "Python",
+      path: "/assets/logos/python.svg",
+    },
+  ],
+},
+  {
+    id: 5,
+    title: "Law-firm Website",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "A professional website for a law firm, showcasing services and expertise.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Designed a clean and modern layout to enhance user experience.",
+      "Implemented a blog section for legal articles and updates.",
+      "Integrated contact forms and appointment scheduling features.",
+      "Optimized for mobile devices and search engines.",
     ],
-    href: "",
+    href: "https://lawfirm2-eight.vercel.app",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/assets/projects/Law.png ",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "React",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "Vite",
+        path: "/assets/logos/vitejs.svg",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
         name: "TailwindCSS",
         path: "/assets/logos/tailwindcss.svg",
       },
-    ],
-  },
-  {
-    id: 4,
-    title: "C++ Game Engine",
-    description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
-    subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/game-engine.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
-      },
-      {
-        id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
       {
         id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "WordPress Custom Theme",
-    description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
-    subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
-      },
-      {
-        id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
+        name: "javascript",
+        path: "/assets/logos/javascript.svg",
       },
     ],
   },
   {
     id: 6,
-    title: "Online Learning Platform",
+    title: "Speed.com",
     description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
+      "A web application that allows users to check their internet connection status.",
     subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
+      "Implemented real-time connection status monitoring.",
+      "Provided detailed reports on connection speed and reliability.",
+      "Included troubleshooting tips for common connectivity issues.",
+      "Designed a user-friendly interface for easy navigation.",
     ],
-    href: "",
+    href: "https://speed-com.vercel.app",
     logo: "",
-    image: "/assets/projects/elearning.jpg",
+    image: "/assets/projects/image.png",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "python",
+        path: "/assets/logos/python.svg",
       },
       {
         id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
+        name: "javascript",
+        path: "/assets/logos/javascript.svg",
       },
       {
         id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
+        name: "react",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 4,
