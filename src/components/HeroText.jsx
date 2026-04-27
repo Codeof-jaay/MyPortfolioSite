@@ -25,7 +25,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi, I'm Jude
+          Hi, I'm Jude Anyanwu
         </motion.h1>
         <div className="flex flex-col items-center">
           <motion.p
@@ -35,73 +35,36 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            Dedicated to Crafting
+            Building the future with code
           </motion.p>
-          <motion.div
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.5 }}
-          className="text-center"
-          >
-            <FlipWords
-              words={words}
-              className="font-black text-center justify-center text-white text-6xl text-wrap"
-            />
-          </motion.div>
           <motion.p
             className="text-4xl font-medium text-neutral-300"
             variants={variants}
             initial="hidden"
             animate="visible"
-            transition={{ delay: 1.8 }}
+            transition={{ delay: 1.5 }}
           >
-            one line of code at a time
+            AI Engineer • Developer • Problem Solver
           </motion.p>
         </div>
       </div>
       {/* Mobile View */}
-      <div className="flex- flex-row space-y-6 md:hidden">
-        <motion.p
-          className="text-4xl font-medium"
+      <div className="flex-col flex space-y-6 md:hidden">
+        <motion.div
           variants={variants}
           initial="hidden"
           animate="visible"
           transition={{ delay: 1 }}
+          className="text-center"
         >
-          Hi,I'm Jude 
-        </motion.p>
-        <div >
-          <motion.p
-            className="text-5xl font-black text-neutral-300"
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.2 }}
-          >
-            Building
+          <motion.h1 className="text-3xl font-medium">Hi, I'm Jude Anyanwu</motion.h1>
+          <motion.p className="text-4xl font-medium text-neutral-300">
+            Building the future with code
           </motion.p>
-          <motion.div
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.5 }}
-          >
-            <FlipWords
-              words={words}
-              className="font-bold text-white text-5xl text-center justify-center"
-            />
-          </motion.div>
-          <motion.p
-            className="text-4xl font-black text-neutral300"
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.8 }}
-          >
-            one line of code at a time
+          <motion.p className="text-2xl font-medium text-neutral-300 mt-2">
+            AI Engineer • Developer • Problem Solver
           </motion.p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

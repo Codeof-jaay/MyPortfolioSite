@@ -50,7 +50,7 @@ const NavBar = () => {
   return (
              <div
       onMouseMove={handleMouseMove}
-      className="fixed inset-x-4 top-12 z-20 w-[40%] space-x-3 py-2 mx-auto rounded-4xl overflow-hidden hover:py-3 hover:scale-x-110 duration-500"
+      className="fixed top-12 z-20 space-x-3 py-2 rounded-4xl overflow-hidden hover:py-3 hover:scale-x-110 duration-500 inset-x-4 md:inset-x-4 md:left-1/2 md:transform md:-translate-x-1/2 md:w-[40%] w-auto right-4 left-auto sm:inset-x-auto"
       style={{
         transition: "all 0.6s ease",
       }}
@@ -69,7 +69,7 @@ const NavBar = () => {
       {/* Slow liquid shimmer (ambient) */}
       <div className="absolute inset-0 animate-liquid opacity-25 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.6)_0%,transparent_60%)]" />
    
-      <div id="MyDiv" className="mx-auto c-space max-w-7xl ">
+      <div id="MyDiv" className="c-space max-w-7xl ">
         <div className="flex items-center justify-center px-2 py-3 sm:py-2">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -89,8 +89,8 @@ const NavBar = () => {
         </div>
 
         {isOpen && (
-          <motion.div className="block justify-center overflow-hidden text-center sm:hidden" initial={{ opacity: 0, x:-20, height: "1rem"}} animate={{ opacity: 1, x: -8, height: "15rem" }} transition={{ duration: .8 }} style={{ maxHeight:"100vh" }}>
-            <nav className="pb-5">
+          <motion.div className="block overflow-hidden sm:hidden" initial={{ opacity: 0, width: "2rem", height: "2rem" }} animate={{ opacity: 1, width: "auto", height: "auto" }} transition={{ duration: .8 }}>
+            <nav className="pb-5 flex flex-row gap-2">
               <Navigation onNavigate={() => setIsOpen(false)} />
             </nav>
           </motion.div>
