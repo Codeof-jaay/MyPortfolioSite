@@ -25,7 +25,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi, I'm Jude Anyanwu
+          Hi, I'm Jude
         </motion.h1>
         <div className="flex flex-col items-center">
           <motion.p
@@ -35,16 +35,28 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            Building the future with code
+            Dedicated to Crafting
           </motion.p>
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 1.5 }}
+          className="text-center"
+          >
+            <FlipWords
+              words={words}
+              className="font-black text-center justify-center text-white text-6xl text-wrap"
+            />
+          </motion.div>
           <motion.p
             className="text-4xl font-medium text-neutral-300"
             variants={variants}
             initial="hidden"
             animate="visible"
-            transition={{ delay: 1.5 }}
+            transition={{ delay: 1.8 }}
           >
-            AI Engineer • Developer • Problem Solver
+            one line of code at a time
           </motion.p>
         </div>
       </div>
