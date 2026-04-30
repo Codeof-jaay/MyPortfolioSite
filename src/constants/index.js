@@ -95,8 +95,8 @@ export const myProjects = [
     },
     {
       id: 2,
-      name: "Flask",
-      path: "/assets/logos/flask.svg",
+      name: "FastAPI",
+      path: "/assets/logos/FastAPI.svg",
     },
     {
       id: 3,

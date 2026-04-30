@@ -29,6 +29,8 @@ const App = () => {
       const hash = window.location.hash;
       if (hash === '#/all-projects') {
         setCurrentPage('all-projects');
+        // Scroll to top
+        window.scrollTo(0, 0);
       } else {
         setCurrentPage('home');
       }
