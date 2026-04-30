@@ -7,9 +7,11 @@ import Experience from './sections/Experience';
 import Contacts from './sections/Contacts';
 import Footer from './sections/Footer';
 import { PageLoad } from './components/PageLoad';
+import AllProjects from './pages/AllProjects';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState('home');
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -19,6 +21,23 @@ const App = () => {
       }, 100);
     }, 10000); // 10s loader
     return () => clearTimeout(timer);
+  }, []);
+
+  // Handle hash navigation
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash === '#/all-projects') {
+        setCurrentPage('all-projects');
+      } else {
+        setCurrentPage('home');
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    handleHashChange(); // Check initial hash
+
+    return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
   return (
@@ -36,16 +55,26 @@ const App = () => {
           loading ? 'opacity-0' : 'opacity-100'
         }`}
       >
-        <NavBar />
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Contacts />
-        <Footer />
+        {currentPage === 'all-projects' ? (
+          <>
+            <AllProjects />
+            <Footer />
+          </>
+        ) : (
+          <>
+            <NavBar />
+            <Hero />
+            <About />
+            <Experience />
+            <Projects />
+            <Contacts />
+            <Footer />
+          </>
+        )}
       </div>
     </div>
   );
 };
 
 export default App;
+
